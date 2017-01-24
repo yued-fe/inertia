@@ -16,7 +16,7 @@
 new Inertia(ele);
 ```
 
-### 语法
+## 语法
 ``` javascript
 new Inertia(ele, option);
 ```
