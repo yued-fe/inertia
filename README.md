@@ -4,13 +4,13 @@
 原生JavaScript编写，适用于触屏设备。
 
 ## 使用示意
-1. 引入JS文件，例如
+①. 引入JS文件，例如
 
 ``` html
 <script src="Inertia.js"></script>
 ```
 
-2. 绑定
+②. 绑定
 
 ``` javascript
 new Inertia(ele);
