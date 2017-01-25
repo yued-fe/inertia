@@ -125,12 +125,12 @@
         };
 
         document.addEventListener('touchmove', function (event) {
-            if (data.touching !== true) {
+            if (!data.touching) {
                 return;
             }
 
             // 当移动开始的时候开始记录时间
-            if (data.timerready == true) {
+            if (data.timerready) {
                 data.timerstart = +new Date();
                 data.timerready = false;
             }
@@ -177,7 +177,7 @@
         });
 
         document.addEventListener('touchend', function () {
-            if (data.touching === false) {
+            if (!data.touching) {
                 // fix iOS fixed bug
                 return;
             }
@@ -217,7 +217,7 @@
 
             // 速度计算法
             var step = function () {
-                if (data.touching == true) {
+                if (data.touching) {
                     data.inertiaing = false;
                     return;
                 }
@@ -255,7 +255,7 @@
 
                 if (speed < 0.1) {
                     speed = 0;
-                    if (params.edge == false) {
+                    if (!params.edge) {
                         data.inertiaing = false;
 
                         if (win.localStorage) {
@@ -285,7 +285,7 @@
 
                 var run = function () {
                     // 如果用户触摸元素，停止继续动画
-                    if (data.touching == true) {
+                    if (data.touching) {
                         data.inertiaing = false;
                         return;
                     }
