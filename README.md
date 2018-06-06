@@ -3,6 +3,8 @@
 
 原生JavaScript编写，适用于触屏设备。
 
+demo地址：<a href="https://yued-fe.github.io/inertia/demo/simple.html">./demo/simple.html</a>
+
 ## 使用示意
 ①. 引入JS文件，例如
 
