@@ -6,7 +6,7 @@
 <title>弹动小球使用演示</title>
 <style>
 .ball {
-	position: absolute;
+	position: fixed;
     line-height: 2.75rem;
     width: 2.75rem;
     height: 2.75rem;
@@ -18,11 +18,15 @@
     background-color: #ed424b;
     background-clip: padding-box;
     text-decoration: none;
+    top: 0;
 }
 </style>
 </head>
 
 <body>
+
+<div style="height: 2000px;">滚动测试</div>
+
 <a href="javascript:" id="ball" class="ball">拖我</a>
 <script src="../src/Inertia.js"></script>
 <script>

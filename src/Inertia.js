@@ -174,6 +174,8 @@
             ele.distanceY = y;
 
             // localStorage['Inertia_' + ele.id] = [ele.distanceX, ele.distanceY].join();
+        }, {
+            passive: false
         });
 
         document.addEventListener('touchend', function () {
