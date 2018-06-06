@@ -172,9 +172,7 @@
             // 缓存移动位置
             ele.distanceX = x;
             ele.distanceY = y;
-
-            // localStorage['Inertia_' + ele.id] = [ele.distanceX, ele.distanceY].join();
-        }, {
+        }, { // fix #3 #5
             passive: false
         });
 
